@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.contenue {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.hebergeur-image.com/upload/176.170.19.84-632e1d9f72206.jpg");
+    background-size: 300%;
+}
+
+.contenue-carte {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    transition: 0.7s;
+    border: 3px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.contenue-carte:hover {
+    height: 420px;
+    box-shadow: 0 0 10px white,
+        inset 0 0 10px white;
+}
+
+.contenue-carte p {
+    margin-top: 100px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.contenue-carte:hover p {
+    letter-spacing: 8px;
+}
+
+.profil-img {
+    position: absolute;
+    transform: translateY(-90px);
+    background-image: url("https://www.hebergeur-image.com/upload/176.170.19.84-632e1f46c4e59.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: 0.8s;
+}
+
+.contenue-carte:hover .profil-img{
+    box-shadow: 0 0 10px white,
+        inset 0 0 10px white;
+    transform: scale(130%) translateY(-90px);  
+}
+
+.carte {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.7s;
+}
+
+.contenue-carte:hover .carte{
+    margin-top: 0;
+}
+.link {
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 5px 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 34px;
+    border: 2px solid white;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.link:hover {
+    box-shadow: 0 0 10px white,
+    inset 0 0 10px white;
+    letter-spacing: 3px;
+    background: white;
+    color: black;
+
+}
